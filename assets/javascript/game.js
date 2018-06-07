@@ -6,20 +6,26 @@ var wins = 0;
 var losses = 0;
 var compNum = Math.floor(Math.random()*101)+20;
 var userNum = 0;
-var currency1 = Math.floor(Math.random()*12)+12;
-var currency2 = Math.floor(Math.random()*12)+12;
-var currency3 = Math.floor(Math.random()*12)+12;
-var currency4 = Math.floor(Math.random()*12)+12;
+var currency1 = Math.floor(Math.random()*12)+1;
+var currency2 = Math.floor(Math.random()*12)+1;
+var currency3 = Math.floor(Math.random()*12)+1;
+var currency4 = Math.floor(Math.random()*12)+1;
+
+$("#winsCounter").html("<p>Wins: " + wins + "</p>");
+$("#lossesCounter").html("<p>Losses: " + losses + "</p>");
+$("#userNum").html("<h6>" + userNum + "</h6>");
+$("#compNum").html("<h6>" + compNum + "</h6>");
+
 
 // functions
 
 function newGame() {
     compNum = Math.floor(Math.random()*101)+20;
     userNum = 0;
-    var currency1 = Math.floor(Math.random()*12)+12;
-    var currency2 = Math.floor(Math.random()*12)+12;
-    var currency3 = Math.floor(Math.random()*12)+12;
-    var currency4 = Math.floor(Math.random()*12)+12;
+    var currency1 = Math.floor(Math.random()*12)+1;
+    var currency2 = Math.floor(Math.random()*12)+1;
+    var currency3 = Math.floor(Math.random()*12)+1;
+    var currency4 = Math.floor(Math.random()*12)+1;
 }
 
 
@@ -41,6 +47,11 @@ $(".britPound").on("click", function() {
         losses ++;
         newGame();
     }
+    $("#winsCounter").html("<p>Wins: " + wins + "</p>");
+    $("#lossesCounter").html("<p>Losses: " + losses + "</p>");
+    $("#userNum").html("<h6>" + userNum + "</h6>");
+    $("#compNum").html("<h6>" + compNum + "</h6>");
+
 })
 
 $(".euro").on("click", function() {
@@ -53,6 +64,11 @@ $(".euro").on("click", function() {
         losses ++;
         newGame();
     }
+    $("#winsCounter").html("<p>Wins: " + wins + "</p>");
+    $("#lossesCounter").html("<p>Losses: " + losses + "</p>");
+    $("#userNum").html("<h6>" + userNum + "</h6>");
+    $("#compNum").html("<h6>" + compNum + "</h6>");
+
 })
 
 $(".yen").on("click", function() {
@@ -65,6 +81,11 @@ $(".yen").on("click", function() {
         losses ++;
         newGame();
     }
+    $("#winsCounter").html("<p>Wins: " + wins + "</p>");
+    $("#lossesCounter").html("<p>Losses: " + losses + "</p>");
+    $("#userNum").html("<h6>" + userNum + "</h6>");
+    $("#compNum").html("<h6>" + compNum + "</h6>");
+
 })
 
 $(".rubel").on("click", function() {
@@ -77,6 +98,11 @@ $(".rubel").on("click", function() {
         losses ++;
         newGame();
     }
+    $("#winsCounter").html("<p>Wins: " + wins + "</p>");
+    $("#lossesCounter").html("<p>Losses: " + losses + "</p>");
+    $("#userNum").html("<h6>" + userNum + "</h6>");
+    $("#compNum").html("<h6>" + compNum + "</h6>");
+    
 })
 
 })
