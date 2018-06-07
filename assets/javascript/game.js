@@ -41,7 +41,7 @@ console.log("currency4:" + currency4);
 
 // game flow
 
-$(".britPound").on("click", function() {
+$("#britPound").on("click", function() {
     userNum = userNum + currency1;
     console.log(userNum);
     if (userNum > compNum) {
@@ -58,7 +58,7 @@ $(".britPound").on("click", function() {
 
 })
 
-$(".euro").on("click", function() {
+$("#euro").on("click", function() {
     userNum = userNum + currency2;
     console.log(userNum);
     if (userNum > compNum) {
@@ -75,7 +75,7 @@ $(".euro").on("click", function() {
 
 })
 
-$(".yen").on("click", function() {
+$("#yen").on("click", function() {
     userNum = userNum + currency3;
     console.log(userNum);
     if (userNum > compNum) {
@@ -92,7 +92,7 @@ $(".yen").on("click", function() {
 
 })
 
-$(".rubel").on("click", function() {
+$("#rubel").on("click", function() {
     userNum = userNum + currency4;
     console.log(userNum);
     if (userNum > compNum) {

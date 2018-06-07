@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,30 +12,15 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/reset.css">
-
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body style="background: url(assets/images/CurrenciesOfTheWorld.jpg)">
 
-
-    <style>
-
-        * {
-          margin: 2.5px;
-          padding: 2.5px;  
-          border: 2px;
-          border-color: gray;
-        }
-
-        .currency {
-            margin-right: 5px;
-        }
-    </style>
-
     <div class="container">
         <div class="row">
-            <div class="col-md-4" style="background: tan;">
+            <div class="col-md-4" id="titleHead">
                 <h1>Currency Exchange</h1>
             </div>
             <div class="col-md-8">
@@ -45,7 +29,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-6" style="background: tan;">
+            <div class="col-md-6" id="rules">
                 <p>In the world you continually have different currencies changing in value compared to other countries currencies.</p>
                 <p>In this game you will be given 4 different currencies with different values every game you play. By clicking on one of the currency symbols you will add a specific amount of money to your "on hand cash."</p>
                 <p>You can win the game by matching your total amount of "on hand cash" to the computers random amount of money to buy a product.</p>
@@ -58,19 +42,22 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4">            
+            <div class="col-md-5">            
                 <div class="row">
-                    <div class="col-sm-12" style="background: tan;">
+                    <div class="col-sm-12" id="compArea">
                         <h3>Funds needed by the bank:</h3>
                     </div>
                 </div>
                 
                 <div class="row">
-                    <div class="col-xs-8" style="background: tan;">
+                    <div class="col-xs-4" id="compArea">
                         <!-- randomly generated number -->
-                        <h3 id="compNum">numbers</h3>
+                        <h3 id="compNum">#</h3>
                     </div>
-                    <div class="col-xs-4" style="background: tan;">
+                    <div class="col-xs-2">
+                        <!-- This area is intentially left blank -->
+                    </div>
+                    <div class="col-xs-4" id="score">
                         <!-- wins and losses counter -->
                         <h6 id="winsCounter">Wins: </h6>
                         <h6 id="lossesCounter">Losses: </h6>
@@ -78,18 +65,18 @@
                 </div>
             </div>
 
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <!-- This are is intentially left blank -->
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-5" style="background: tan;">
+            <div class="col-md-5" id="buttonArea">
                 <!-- Images placed in this area -->
-                <button class="currency britPound" style="background: url(assets/images/BritPoundCurrencySymbol.jpg); height: 100px; width: 100px; background-size: 95px 95px; background-repeat: no-repeat; padding: 2.5px;"></button>
-                <button class="currency euro" style="background: url(assets/images/EuroCurrencySymbol.jpg); height: 100px; width: 100px; background-size: 95px 95px; background-repeat: no-repeat; padding: 2.5px;"></button>
-                <button class="currency yen" style="background: url(assets/images/YenCurrencySymbol.jpg); height: 100px; width: 100px; background-size: 95px 95px; background-repeat: no-repeat; padding: 2.5px;"></button>
-                <button class="currency rubel" style="background: url(assets/images/RubelCurrencySymbol.jpg); height: 100px; width: 100px; background-size: 95px 95px; background-repeat: no-repeat; padding: 2.5px;"></button>
+                <button class="currency" id="britPound"></button>
+                <button class="currency" id="euro"></button>
+                <button class="currency" id="yen"></button>
+                <button class="currency" id="rubel"></button>
             </div>
             <div class="col-md-7">
                 <!-- This area is intentially left blank -->
@@ -97,14 +84,14 @@
         </div>
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-5">
                 <div class="row">
-                    <div class="col-sm-12" style="background: tan;">
+                    <div class="col-sm-12" id="userArea">
                         <h3>Your current cash on hand:</h3>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12" style="background: tan;">
+                    <div class="col-sm-2" id="userArea">
                         <!-- user stored number amount -->
                         <h3 id="userNum">#</h3>
                     </div>

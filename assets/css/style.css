@@ -1,0 +1,108 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 2.5px;
+    padding: 2.5px;  
+    border: 2px;
+    border-color: gray;
+}
+
+/* .currency {
+    margin-right: 5px;
+    height: 100px;
+    width: 100px;
+    background-size: 95px 95px;
+    background-repeat: no-repeat;
+    padding: 2.5px;
+} */
+
+#titleHead {
+    background: tan;
+    line-height: 48px;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px;
+}
+
+#rules {
+    background: tan;
+    line-height: 28px;
+    font-size: 24px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#compArea {
+    background: tan;
+    line-height: 40px;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px;
+}
+
+#score {
+    background: tan;
+    line-height: 28px;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+#buttonArea{
+    background: tan;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+#britPound {
+    background: url(../images/BritPoundCurrencySymbol.jpg);
+    margin-right: 5px;
+    height: 100px;
+    width: 100px;
+    background-size: 95px 95px;
+    background-repeat: no-repeat;
+    padding: 2.5px;
+}
+
+#euro {
+    background: url(../images/EuroCurrencySymbol.jpg);
+    margin-right: 5px;
+    height: 100px;
+    width: 100px;
+    background-size: 95px 95px;
+    background-repeat: no-repeat;
+    padding: 2.5px;
+}
+
+#yen {
+    background: url(../images/YenCurrencySymbol.jpg);
+    margin-right: 5px;
+    height: 100px;
+    width: 100px;
+    background-size: 95px 95px;
+    background-repeat: no-repeat;
+    padding: 2.5px;
+}
+
+#rubel {
+    background: url(../images/RubelCurrencySymbol.jpg);
+    margin-right: 5px;
+    height: 100px;
+    width: 100px;
+    background-size: 95px 95px;
+    background-repeat: no-repeat;
+    padding: 2.5px;
+}
+
+#userArea {
+    background: tan;
+    line-height: 40px;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px;
+}
