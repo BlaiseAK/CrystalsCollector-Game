@@ -33,6 +33,10 @@ console.log("wins:" + wins);
 console.log("losses:" + losses);
 console.log("CompNum:" + compNum);
 console.log("UserNum:" + userNum);
+console.log("currency1:" + currency1);
+console.log("currency2:" + currency2);
+console.log("currency3:" + currency3);
+console.log("currency4:" + currency4);
 
 
 // game flow
@@ -41,10 +45,10 @@ $(".britPound").on("click", function() {
     userNum = userNum + currency1;
     console.log(userNum);
     if (userNum > compNum) {
-        wins ++;
+        losses ++;
         newGame();
     } else if (userNum === compNum) {
-        losses ++;
+        wins ++;
         newGame();
     }
     $("#winsCounter").html("<p>Wins: " + wins + "</p>");
@@ -58,10 +62,10 @@ $(".euro").on("click", function() {
     userNum = userNum + currency2;
     console.log(userNum);
     if (userNum > compNum) {
-        wins ++;
+        losses ++;
         newGame();
     } else if (userNum === compNum) {
-        losses ++;
+        wins ++;
         newGame();
     }
     $("#winsCounter").html("<p>Wins: " + wins + "</p>");
@@ -75,10 +79,10 @@ $(".yen").on("click", function() {
     userNum = userNum + currency3;
     console.log(userNum);
     if (userNum > compNum) {
-        wins ++;
+        losses ++;
         newGame();
     } else if (userNum === compNum) {
-        losses ++;
+        wins ++;
         newGame();
     }
     $("#winsCounter").html("<p>Wins: " + wins + "</p>");
@@ -92,10 +96,10 @@ $(".rubel").on("click", function() {
     userNum = userNum + currency4;
     console.log(userNum);
     if (userNum > compNum) {
-        wins ++;
+        losses ++;
         newGame();
     } else if (userNum === compNum) {
-        losses ++;
+        wins ++;
         newGame();
     }
     $("#winsCounter").html("<p>Wins: " + wins + "</p>");
